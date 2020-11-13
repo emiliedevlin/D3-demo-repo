@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(254,254, 198);
+}
+
+.square {
+  background-color: black;
+  color: white;
+  /*Pour faire le carré*/
+  height: 300px;
+  width: 300px;
+  /*Cmment la phrase dans ce carré*/
+  display: flex; /* ca permet de dire à ces enfants de se comporter par rapport au flex box*/
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* On fait bien d'abord l'animation cad @keyframes ensuite on tape les donner ici*/
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: 8;
+}
+
+
+/* Pour faire les annimation on peut defenir une annimation
+on creer d'abord l'animation puis on l'applique a un élément*/
+
+
+@keyframes bounce {
+  /*On va définir l'état du début de l'animation*/
+  0% {
+    /*On va attribuer des valeurs*/
+    transform: scale(1);
+    position: relative; /*on va te positionner par rapport à ton emplacement de base pas par rapport à la page*/
+    top: 0;
+  }
+  40% {
+    transform: scale(1.8);
+    position: relative;
+    top: 400px;
+  }
+  80% {
+    transform: scale(O.6);
+    position: relative;
+    top: 200px;
+  }
+  100% {
+    transform: scale(1);
+    position: relative;
+    top: 0;
+  }
+
+}
