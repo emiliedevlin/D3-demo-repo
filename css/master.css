@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(254,254, 198);
+}
+
+.square {
+  background-color: black;
+  color: white;
+  /*Pour faire le carré*/
+  height: 300px;
+  width: 300px;
+  /*Cmment la phrase dans ce carré*/
+  display: flex; /* ca permet de dire à ces enfants de se comporter par rapport au flex box*/
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
